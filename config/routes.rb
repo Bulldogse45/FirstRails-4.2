@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   get '/' => 'welcome#index'
   get '/:name' => 'welcome#with_name'
+  get '/lorem/random/(:num_par)' => 'welcome#random_gen'
   get '/lorem/:style/(:num_par)' => 'welcome#lipsum_style'
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
